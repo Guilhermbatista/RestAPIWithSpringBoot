@@ -18,8 +18,11 @@ import com.apiWeb.courseApi.data.vo.v1.PersonVO;
 import com.apiWeb.courseApi.data.vo.v2.PersonVOV2;
 import com.apiWeb.courseApi.services.PersonServices;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 @RestController
 @RequestMapping("/api/person/v1")
+@Tag(name="People", description = "Endepoints for Managing People")
 public class PersonController {
 
 	@Autowired
