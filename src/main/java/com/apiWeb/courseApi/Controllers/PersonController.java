@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,8 +22,9 @@ import com.apiWeb.courseApi.services.PersonServices;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
 @RestController
+
 @RequestMapping("/api/person/v1")
-@Tag(name="People", description = "Endepoints for Managing People")
+@Tag(name = "People", description = "Endepoints for Managing People")
 public class PersonController {
 
 	@Autowired
